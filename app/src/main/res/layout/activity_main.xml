@@ -5,32 +5,44 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#03A9F4"
+    android:background="#FF9800"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Are you ready?"
+        android:text="@string/are_you_ready"
+        android:textColor="#263238"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.355" />
+        app:layout_constraintVertical_bias="0.323" />
 
     <Button
         android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="108dp"
+        android:layout_height="56dp"
         android:layout_marginStart="61dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="60dp"
         android:layout_marginBottom="78dp"
-        android:text="See stats"
+        android:background="#1F3061"
+        android:backgroundTint="#2196F3"
+        android:text="@string/see_stats"
+        android:textColor="#4A148C"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorLink="#0E0D0D"
+        app:icon="@color/cardview_shadow_end_color"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.513"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.074"
+        tools:ignore="TextSizeCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

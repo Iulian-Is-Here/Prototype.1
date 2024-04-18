@@ -25,7 +25,7 @@ public class SettingsActivity extends AppCompatActivity implements
         if (savedInstanceState == null) {
             getSupportFragmentManager()
                     .beginTransaction()
-                    .replace(R.id.settings, new HeaderFragment())
+                    .replace(R.id.button, new HeaderFragment())
                     .commit();
         } else {
             setTitle(savedInstanceState.getCharSequence(TITLE_TAG));
@@ -72,7 +72,7 @@ public class SettingsActivity extends AppCompatActivity implements
         fragment.setTargetFragment(caller, 0);
         // Replace the existing Fragment with the new Fragment
         getSupportFragmentManager().beginTransaction()
-                .replace(R.id.settings, fragment)
+                .replace(R.id.button, fragment)
                 .addToBackStack(null)
                 .commit();
         setTitle(pref.getTitle());
